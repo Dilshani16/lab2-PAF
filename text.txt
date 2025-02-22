@@ -1,1 +1,61 @@
-change branch
+
+Dilshani@Dil_VIVO_Book MINGW64 ~/Desktop/New folder
+$ git clone https://github.com/Dilshani16/lab2-PAF.git
+Cloning into 'lab2-PAF'...
+remote: Enumerating objects: 3, done.
+remote: Counting objects: 100% (3/3), done.
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+Receiving objects: 100% (3/3), done.
+
+Dilshani@Dil_VIVO_Book MINGW64 ~/Desktop/New folder
+$ cd lab2-PAF
+
+Dilshani@Dil_VIVO_Book MINGW64 ~/Desktop/New folder/lab2-PAF (main)
+$ git branch feature/branch1
+
+
+Dilshani@Dil_VIVO_Book MINGW64 ~/Desktop/New folder/lab2-PAF (main)
+$ git push origin feature/branch1
+Total 0 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+remote:
+remote: Create a pull request for 'feature/branch1' on GitHub by visiting:
+remote:      https://github.com/Dilshani16/lab2-PAF/pull/new/feature/branch1
+remote:
+To https://github.com/Dilshani16/lab2-PAF.git
+ * [new branch]      feature/branch1 -> feature/branch1
+
+Dilshani@Dil_VIVO_Book MINGW64 ~/Desktop/New folder/lab2-PAF (main)
+$ git checkout feature/branch1
+Switched to branch 'feature/branch1'
+
+Dilshani@Dil_VIVO_Book MINGW64 ~/Desktop/New folder/lab2-PAF (feature/branch1)
+$ git add --all
+
+Dilshani@Dil_VIVO_Book MINGW64 ~/Desktop/New folder/lab2-PAF (feature/branch1)
+$ git status
+On branch feature/branch1
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   text.txt
+
+
+Dilshani@Dil_VIVO_Book MINGW64 ~/Desktop/New folder/lab2-PAF (feature/branch1)
+$ git commit -m "add text"
+[feature/branch1 ef6c18c] add text
+ 1 file changed, 1 insertion(+)
+ create mode 100644 text.txt
+
+Dilshani@Dil_VIVO_Book MINGW64 ~/Desktop/New folder/lab2-PAF (feature/branch1)
+$ git push -u origin feature/branch1
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 315 bytes | 315.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To https://github.com/Dilshani16/lab2-PAF.git
+   467da62..ef6c18c  feature/branch1 -> feature/branch1
+branch 'feature/branch1' set up to track 'origin/feature/branch1'.
+
+Dilshani@Dil_VIVO_Book MINGW64 ~/Desktop/New folder/lab2-PAF (feature/branch1)
+$
